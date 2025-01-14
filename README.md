@@ -1,3 +1,5 @@
+[![CI Status](https://github.com/demiurg-dev/solidity-learning/actions/workflows/test.yml/badge.svg)](https://github.com/demiurg-dev/solidity-learning/actions/workflows/test.yml)
+
 # Solidity learning
 
 This repository contains a collection of smart contracts written in Solidity, accompanied by tests to
