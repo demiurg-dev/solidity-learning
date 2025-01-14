@@ -5,6 +5,13 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /**
  * @dev A simple exchange between arbitrary tokens that rewards matching compatible orders.
+ * 
+ * The contract provides three main entry points:
+ * - Placing a new order: This specifies two tokens to exchange, along with the quantity and cost
+ *  (amounts of tokens to exchange).
+ * - Canceling an existing order: This can only be performed by the owner of the order.
+ * - Matching two orders: When two compatible orders are matched, the specified token amounts are
+ *  exchanged. Any excess tokens resulting from the matching process are retained by the matcher.
  */
 contract Exchange {
     // Description of a single order.
